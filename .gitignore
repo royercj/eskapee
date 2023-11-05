@@ -1,0 +1,11 @@
+#ignore these files
+.nextflow*
+testouts/
+work/
+data/
+results/
+.DS_store
+.nextflow.log
+min_raw_reads.csv
+pipeline_template.yml
+*.pyc
