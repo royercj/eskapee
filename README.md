@@ -1,11 +1,22 @@
-# ![nf-core/eskapee](docs/images/nf-core-eskapee_logo_light.png#gh-light-mode-only) ![nf-core/eskapee](docs/images/nf-core-eskapee_logo_dark.png#gh-dark-mode-only)
+## ESKAPEE pathogen detection pipeline
+Welcome! This pipeline is currently a work in progress. I developed this pipeline as part of a Student Worksite Experience Project (SWEP) internship at Centers for Disease Control (sponsored by Leidos) in summer of 2023. This pipeline has been prototyped around detection of *Escherichia coli* from human metagenome samples, with plans to expand to full detection of all ESKAPEE pathogens. Please read below for planned updates, as well as pipeline premise and other information. 
 
+### Currently in the works:
+- Update args for passing in Kraken2 database
+- Add additional ARG detection tools
+- Create condensed report from ARG tool results
+- Expand gene set to include other ESKAPEE pathogens
+- Convert drep module to subworkflow
 
-[![AWS CI](https://img.shields.io/badge/CI%20tests-full%20size-FF9900?labelColor=000000&logo=Amazon%20AWS)](https://nf-co.re/eskapee/results)[![Get help on Slack](http://img.shields.io/badge/slack-nf--core%20%23eskapee-4A154B?labelColor=000000&logo=slack)](https://nfcore.slack.com/channels/eskapee)[![Follow on Twitter](http://img.shields.io/badge/twitter-%40nf__core-1DA1F2?labelColor=000000&logo=twitter)](https://twitter.com/nf_core)[![Follow on Mastodon](https://img.shields.io/badge/mastodon-nf__core-6364ff?labelColor=FFFFFF&logo=mastodon)](https://mstdn.science/@nf_core)[![Watch on YouTube](http://img.shields.io/badge/youtube-nf--core-FF0000?labelColor=000000&logo=youtube)](https://www.youtube.com/c/nf-core)
+### Future updates to include:
+- Add additional functionality to accept WGS isolates in addition to metagenomes
 
 ## Introduction
 
-**nf-core/eskapee** is a bioinformatics pipeline that ...
+The ESKAPEE pathogens, an acronym for *Enterococcus faecium, Staphylococcus aureus, Klebsiella pneumoniae, Acinetobacter baumannii, Pseudomonas aeruginosa, Enterobacter* species, and *Escherichia coli* pose significant global threats to human health. These pathogens may be antibiotic and treatment-resistant, and are frequently found in hospital and medical settings as infections of ports, catheters, and wounds. Identification of ESKAPEE pathogens may be challenging, as they frequently appear as commensals in the normal human microbiome, making distinction of pathogenic strains difficult. ESKAPEE pathogens may also be difficult to culture in the lab, or may lose virulence in culture, complicating their identification via traditional culture and PCR methods.
+
+
+**nf-core/eskapee** 
 
 <!-- TODO nf-core:
    Complete this sentence with a 2-3 sentence summary of what types of data the pipeline ingests, a brief overview of the
